@@ -5,7 +5,7 @@ name: Reproducibility
 jobs:
   render:
     name: Render assignment
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
