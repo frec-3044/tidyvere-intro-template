@@ -1,17 +1,12 @@
 ---
-title: "Introduction"
+title: "Introduction to Tidyverse Module"
 author: "Quinn Thomas"
-date: "2/28/2019"
 output: github_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-Introduction to Rmarkdown
-
-
 
 Be sure to load the following packages
 
@@ -27,16 +22,14 @@ The Reservoir column is different reservoirs in the Roanoke, VA area that a set 
 
 **Warming-up**
 
-Read the data file into R
+Read the data file into R. This file is directly streamed in R memory from a url, rather than downloaded and saved locally.
 
 ```{r}
 df <- read_csv("https://pasta.lternet.edu/package/data/eml/edi/200/12/0a62d1946e8d9a511bc1404e69e59b8c")
 ```
 # Excerise 1
 
-The first exercise is focused on data visualization
-
-This module starts with a visualization exercise so you will start with a filtered dataset named `df2`.  This subsetted dataset is for a particular location (`Site == 50`) for a particular Reservoir (`Reservoir == "FCR"`)
+The first exercise is focused on data visualization so you will start with a filtered dataset named `df2`.  This subsetted dataset is for a particular location (`Site == 50`) for a particular Reservoir (`Reservoir == "FCR"`)
 
 ```{r}
 df2 <- df |> 
@@ -46,14 +39,14 @@ df2 <- df |>
 ## Question 1:
 
 - Describe the data set that was imported above (`df`): what are the columns and units? Where do the numbers come from? 
-- What is the uncertainty in the measurement? What is the spatial and temporal resolution of the data? What value is used for missing values?  What is the interpretation of missing values?
+- What value is used for missing values?  What is the interpretation of missing values?
 
 ## Question 2
 
 [Plot](https://r4ds.hadley.nz/data-visualize.html#two-numerical-variables) and *describe* the relationship between temperature and depth.  What might explain the pattern? Hint: use the point geometry
 
 ```{r}
-#ggplot(df2, aes(x = Depth_m, y = Temp_C)) + geom_point()
+
 ```
 
 # Exercise 2
@@ -64,55 +57,67 @@ Exercise 2 is focused on cleaning up the full dataset.  Initially, you will be u
 
 We are only interested in the Chla_ugL at the surface of each reservoir. [Filter](https://r4ds.hadley.nz/data-transform.html#filter) the dataset (`df`) to only include measurements less than 1 m deep and [select](https://r4ds.hadley.nz/data-transform.html#sec-select) only the reservoir, site, date, depth, and chlorophyll-a columns
 
-
-```{r}
-df3 <- df |> 
-  filter(Depth_m < 1) |> 
-  select(c("Reservoir","Site","Date","Depth_m","Chla_ugL"))
-```
-
 ## Question 4
 
 The column name Date is not an accurate name for the column because it include the time of day as well.  [Rename](https://r4ds.hadley.nz/data-transform.html#rename) the column to `datetime` and save the updated data frame. 
 
 ```{r}
-#df3 <- df3 |> rename(datetime = Date)
+
 ```
+
 
 ## Question 5
 
-In the analysis below, you will need a column that is the year.  Apply the function `year()` from the lubridate package to the `datetime` column and save the updated data frame.
+In the analysis below, you will need a column that is the year.  Apply the function [`year()`](https://r4ds.hadley.nz/datetimes.html#date-time-components) from the lubridate package to the `datetime` column and save the updated data frame. Hint: you will use the [`mutate` function](https://r4ds.hadley.nz/data-transform.html#sec-mutate) 
+
+```{r}
+
+```
 
 ## Question 6
 
-In the analysis below, you will need a column that is the month  Apply the function `month()` from the lubridate package to the `datetime` column and save the updated data frame.
+In the analysis below, you will need a column that is the month  Apply the function [`month()`](https://r4ds.hadley.nz/datetimes.html#date-time-components) from the lubridate package to the `datetime` column and save the updated data frame. Hint: you will use the [`mutate` function](https://r4ds.hadley.nz/data-transform.html#sec-mutate) 
+
+```{r}
+
+```
 
 ## Question 7
 
-To finalize your cleaned dataset, order the columns by Reservior, Site, Year, and Month.  Hint:  use [`arrange`](https://r4ds.hadley.nz/data-transform.html#arrange)
+To finalize your cleaned dataset, order the values in the columns by Reservoir (A-Z).  Hint:  use [`arrange`](https://r4ds.hadley.nz/data-transform.html#arrange)
+
+```{r}
+
+```
 
 
 # Exercise 3
 
-Exercise 3 is focused on high level summary statistics through the use of the `group_by()` and `summarize()` combination.
+Exercise 3 is focused on high level summary statistics.
 
 ## Question 8
 
 How many different reservoir are in the dataset and what are their names? Hint: use the [`distinct`](https://r4ds.hadley.nz/data-transform.html#distinct) function
 
+```{r}
+
+```
+
 ## Question 9
 
-Which reservoir has the highest mean surface Chlorophyll-a? Hint: use `group_by()` and `summarize()` [combination](https://r4ds.hadley.nz/data-transform.html#groups)
+Which reservoir has the highest mean surface chlorophyll-a? Hint: use `group_by()` and `summarize()` combination [combination](https://r4ds.hadley.nz/data-transform.html#groups)
 
 ```{r}
-df |> 
-  group_by(Reservoir) |> 
-  summarize(mean = mean(Chla_ugL))
+
 ```
 
 ## Question 10
 
 Which reservoir has the highest observed surface temperature?
+
+```{r}
+
+```
 
 # Exercise 4
 
@@ -120,15 +125,27 @@ Exercise 4 dives deeper into the data.
 
 ## Question 11
 
-Plot the surface Chlorophyll-a concentration for each year (averaged across reservoirs) and describe how Chla_ugL is changing over time
+Plot the surface chlorophyll-a concentration for each year (averaged across reservoirs) and describe how surface chlorophyll-a is changing over time.
+
+```{r}
+
+```
 
 ## Question 12
 
-Plot the annual mean surface Chlorophyll-a concentration for each year for each reservoir and describe how the patterns differ from the plot in Question 9.   
+Plot the annual mean surface chlorophyll-a concentration for each year for each reservoir and describe how the patterns differ from the plot in Question 11.  
+
+```{r}
+
+```
 
 ## Question 13
 
-Plot the mean surface Chlorophyll-a concentration by month for each reservoir and describe how the month of peak Chlorophyll-a is similar or different across the reservoirs.
+Plot the mean surface chlorophyll-a concentration by month for each reservoir and describe how the month of peak chlorophyll-a is similar or different across the reservoirs.
+
+```{r}
+
+```
 
 # Exercise 5
 
@@ -136,29 +153,28 @@ Two of the reservoirs are close in distance to each other (FCR and BVR).  We are
 
 ## Question 14:
 
-Plot the difference in the annual mean chlorophyll-a between `BVR` and `FCR`.  Hints: you will need to use `group_by`, `summarize`, `pivot_wider`, and `mutate` to get the the cleaned dataset from Exercise 3 into a table that can be used generate this plot.
+Plot the difference in the annual mean chlorophyll-a between `BVR` and `FCR`.  Hints: you will need to use `group_by`, `summarize`, [`pivot_wider`](https://r4ds.hadley.nz/data-tidy.html#widening-data), and `mutate` to get the the cleaned dataset from Exercise 3 into a table that can be used generate this plot.
 
 ```{r}
-df3 |> 
-  mutate(year = year(datetime)) |> 
-  filter(Reservoir %in% c("BVR","FCR")) |> 
-  group_by(Reservoir, year) |> 
-  summarize(Chla_ugL = mean(Chla_ugL, na.rm = TRUE)) |> 
-  pivot_wider(names_from = Reservoir, values_from = Chla_ugL) |> 
-  mutate(diff = BVR - FCR) |> 
-  ggplot(aes(x = year, y = diff)) + geom_line()
 
 ```
 
-# Exercise
+# Exercise 6
+
+This exercise is focused on exporting the data and a plot 
 
 ## Question 15
 
-Saving plot
+Save the plot from Question 14 to a PNG named `question-14.png` in your repo top-level directory. Hint: use [ggsave()](https://r4ds.hadley.nz/data-visualize.html#sec-ggsave)
+
+```{r}
+
+```
 
 ## Question 16
 
-Write your cleaned data frame to your directory 
+Write your cleaned data frame to your repo top-level directory with the filename of `introduction-cleaned-data.csv`.  Hint use [`write_csv()`](https://r4ds.hadley.nz/data-import.html#sec-writing-to-a-file)
 
-## BE SURE TO KNIT YOUR DOCUMENT AND SUBMIT TO CANVAS!
+```{r}
 
+```
