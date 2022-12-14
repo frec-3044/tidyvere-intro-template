@@ -81,11 +81,11 @@ The column name Date is not an accurate name for the column because it include t
 
 ## Question 5
 
-In the analyis below, you will need a column that is the year.  Apply the function `year()` from the lubridate package to the `datetime` column and save the updated data frame.
+In the analysis below, you will need a column that is the year.  Apply the function `year()` from the lubridate package to the `datetime` column and save the updated data frame.
 
 ## Question 6
 
-In the analyis below, you will need a column that is the month  Apply the function `month()` from the lubridate package to the `datetime` column and save the updated data frame.
+In the analysis below, you will need a column that is the month  Apply the function `month()` from the lubridate package to the `datetime` column and save the updated data frame.
 
 ## Question 7
 
