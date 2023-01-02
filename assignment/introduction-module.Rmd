@@ -59,7 +59,7 @@ We are only interested in the Chla_ugL at the surface of each reservoir. [Filter
 
 ## Question 4
 
-The column name Date is not an accurate name for the column because it include the time of day as well.  [Rename](https://r4ds.hadley.nz/data-transform.html#rename) the column to `datetime` and save the updated data frame. 
+The column name `Date` is not an accurate name for the column because it include the time of day as well.  [Rename](https://r4ds.hadley.nz/data-transform.html#rename) the column to `datetime` and save the updated data frame. 
 
 ```{r}
 
@@ -68,7 +68,7 @@ The column name Date is not an accurate name for the column because it include t
 
 ## Question 5
 
-In the analysis below, you will need a column that is the year.  Apply the function [`year()`](https://r4ds.hadley.nz/datetimes.html#date-time-components) from the lubridate package to the `datetime` column and save the updated data frame. Hint: you will use the [`mutate` function](https://r4ds.hadley.nz/data-transform.html#sec-mutate) 
+In the analysis below, you will need a column that is the year.  Apply the function [`year()`](https://r4ds.hadley.nz/datetimes.html#date-time-components) from the lubridate package to the `datetime` column and save the updated data frame. Hint: you will use the `year` function within the [`mutate` function](https://r4ds.hadley.nz/data-transform.html#sec-mutate) 
 
 ```{r}
 
@@ -76,7 +76,7 @@ In the analysis below, you will need a column that is the year.  Apply the funct
 
 ## Question 6
 
-In the analysis below, you will need a column that is the month  Apply the function [`month()`](https://r4ds.hadley.nz/datetimes.html#date-time-components) from the lubridate package to the `datetime` column and save the updated data frame. Hint: you will use the [`mutate` function](https://r4ds.hadley.nz/data-transform.html#sec-mutate) 
+In the analysis below, you will need a column that is the month.  Apply the function [`month()`](https://r4ds.hadley.nz/datetimes.html#date-time-components) from the lubridate package to the `datetime` column and save the updated data frame. Hint: you will use the [`mutate` function](https://r4ds.hadley.nz/data-transform.html#sec-mutate) 
 
 ```{r}
 
@@ -97,7 +97,7 @@ Exercise 3 is focused on high level summary statistics.
 
 ## Question 8
 
-How many different reservoir are in the dataset and what are their names? Hint: use the [`distinct`](https://r4ds.hadley.nz/data-transform.html#distinct) function
+How many different reservoirs are in the dataset and what are their names? Hint: use the [`distinct`](https://r4ds.hadley.nz/data-transform.html#distinct) function
 
 ```{r}
 
@@ -153,7 +153,7 @@ Two of the reservoirs are close in distance to each other (FCR and BVR).  We are
 
 ## Question 14:
 
-Plot the difference in the annual mean chlorophyll-a between `BVR` and `FCR`.  Hints: you will need to use `group_by`, `summarize`, [`pivot_wider`](https://r4ds.hadley.nz/data-tidy.html#widening-data), and `mutate` to get the the cleaned dataset from Exercise 3 into a table that can be used generate this plot.
+Plot the difference in the annual mean chlorophyll-a between `BVR` and `FCR`.  Hints: you will need to use `group_by`, `summarize`, [`pivot_wider`](https://r4ds.hadley.nz/data-tidy.html#widening-data), and `mutate` to get the cleaned dataset from Exercise 3 into a table that can be used generate this plot.
 
 ```{r}
 
@@ -178,3 +178,5 @@ Write your cleaned data frame to your repo top-level directory with the filename
 ```{r}
 
 ```
+
+Remember to Knit your document as a `github_document` and comment+push your code and knitted document to GitHub.
