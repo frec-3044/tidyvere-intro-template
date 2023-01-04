@@ -38,7 +38,7 @@ df2 <- df |>
 
 ## Question 1:
 
-- Describe the data set that was imported above (`df`): what are the columns and units? Where do the numbers come from? 
+- Describe the data set that was imported above (`df`) to the best of your ability given the documentation provided: what are the columns and units? Where do the numbers come from? 
 - What value is used for missing values?  What is the interpretation of missing values?
 
 ## Question 2
