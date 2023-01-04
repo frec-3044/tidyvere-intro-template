@@ -2,7 +2,7 @@
 
 ## Module weight: 37 pts
 
-- 1 pts per question for a total of 32 pts
+- 2 pts per question for a total of 32 pts
     - **0pts**: no code or answer provided
     - **1 pt**: Code provided and includes at least one correct tidyverse function but is not complete AND/OR (if text answer) response present but limited in depth of answer
     - **2 pt**: Correct provide provided AND/OR insightful text answer provided that correct describes patterns or addresses question.
