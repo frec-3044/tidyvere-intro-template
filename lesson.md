@@ -45,7 +45,7 @@ This module uses a multi-year dataset of water quality variables that have been 
 
 ## Context
 
-This module has been developed as the first module in a junior-level Environmental Data Science course at Virginia Tech.  The course is require for majors in the Environmental Data Science degree.  The course has a pre-requisite course that introduces students to tidyverse concepts.
+This module has been developed as the second module in a junior-level Environmental Data Science course at Virginia Tech.  The course is require for majors in the Environmental Data Science degree.  The course has a pre-requisite course that introduces students to tidyverse concepts.  It assumes that students have set of Git and GitHub and understand how to commit and push through Rstudio.
 
 ## Timeframe
 
@@ -53,5 +53,5 @@ This module has been developed as the first module in a junior-level Environment
 
 ## Background Reading, Video & Exercises
 
-The background reading is embbed in the assignment Rmarkdown as links to the relevant sections of 
+The background reading is embbed in the assignment Rmarkdown as links to the relevant sections of [R for Data Science book (2nd edition)](https://r4ds.hadley.nz) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.
 

@@ -1,57 +1,18 @@
+This repository is a template for every teams introduction to tidyverse repository. This is the first module of FREC 3044 Environmental Data Science, intended to provide a review of tidyverse skills learned in prior courses.
 
-# tidyverse-intro-module
+## assignment
 
-## Overview
+All work for this assignment is in the `assignment` directory.  Code is contained in the `tidyverse-intro.Rmd` notebook, and final rendered output files (`tidyverse-intro.md` and associated files) are in the `assignment` directory as well. The general rubric you will be graded on is found in the `rubric.md` file. 
 
-This module uses a multi-year dataset of water quality variables that have been measured at drinking water reserviors in the Roanoke, VA region.  It focuses on comparing how water temperature and chlorophyll-a, both assoicated with water quality, vary across time and among reservoirs.  The assignment is designed to help you review R tidyverse skills that have been introduced to prior to the course.  It specifically provides links to the relevant sections in the exellent [R for Data Science book (2nd edition)](https://r4ds.hadley.nz) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.  The links allow for self-guided review of the material.
+## Special files
 
-- author: Quinn Thomas (@rqthomas)
-- contact: <rqthomas@vt.edu>
-- url: 
-- date: 2023-01-03
-- license: MIT, CC-BY
-- copyright: Quinn Thomas
-- package: 
+Additionally this repository, and all team repositories, includes most of the special files found here:
 
-## Feedback
+### Common files
 
-- <https://github.com/frec-3044/introduction-template/issues>
+- `README.md` this file, a general overview of the repository in markdown format.  
+- `lesson.md` a description of the assignment.
+- `.gitignore` Optional file, ignore common file types we don't want to accidentally commit to GitHub. Most projects should use this. 
+- `tidyverse-intro.Rproj` an R-Project file created by RStudio for it's own configuration of the repo files.  Some people prefer to `.gitignore` this file, it is optional for team repos to ignore or commit their own `<REPO-NAME>.Rproj` file. 
 
-## Questions
-
-- How does water temperature and chlorophyll-a vary across drinking water reservoirs in the Roanoke, VA region?
-- How do we read and plot this data in a scriptable & reproducible manner?
-- How do we communicate technical analysis in notebook formats that combine code, text, and visuals?
-
-## Objectives
-
-  - Review coding skills learned in pre-requisite courses by analyzing a real environmental dataset
-  - Learn skills in summarizing and wrangling multi-location temporal data
-  - Demonstrate ability to use RStudio, GitHub, and Rmarkdown to demonstrate reproducible output.
-  - Demonstrate ability to communicate clearly in code, written text, and visual formats.
-
-## Requirements:
-
-  - `tidyverse`
-  - `R`
-  - RStudio
-  - Git & GitHub.
-
-## Instructions
-
-  - Open the notebook `assignment/tidyverse-intro.Rmd` in RStudio
-  - Work through the exercises described in the notebook.
-  - `knit` + commit output files to GitHub
-
-## Context
-
-This module has been developed as the first module in a junior-level Environmental Data Science course at Virginia Tech.  The course is require for majors in the Environmental Data Science degree.  The course has a pre-requisite course that introduces students to tidyverse concepts.
-
-## Timeframe
-
-2-weeks (4 75-minute class periods are allocated to this module) at the beginning of the course.
-
-## Background Reading, Video & Exercises
-
-The background reading is embbed in the assignment Rmarkdown as links to the relevant sections of 
 
