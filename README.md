@@ -1,4 +1,4 @@
-This repository is a template for every teams introduction to tidyverse repository. This is the first module of FREC 3044 Environmental Data Science, intended to provide a review of tidyverse skills learned in prior courses.
+This repository is a template for every teams introduction to tidyverse repository. This is the second module of FREC 3044 Environmental Data Science, intended to provide a review of tidyverse skills learned in prior courses.
 
 ## assignment
 
