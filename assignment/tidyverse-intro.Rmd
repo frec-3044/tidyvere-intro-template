@@ -27,6 +27,7 @@ Read the data file into R. This file is directly streamed in R memory from a url
 ```{r}
 df <- read_csv("https://pasta.lternet.edu/package/data/eml/edi/200/12/0a62d1946e8d9a511bc1404e69e59b8c")
 ```
+
 # Excerise 1
 
 The first exercise is focused on data visualization so you will start with a filtered dataset named `df2`.  This subsetted dataset is for a particular location (`Site == 50`) for a particular Reservoir (`Reservoir == "FCR"`)
@@ -43,7 +44,7 @@ df2 <- df |>
 
 ## Question 2
 
-[Plot](https://r4ds.hadley.nz/data-visualize.html#two-numerical-variables) and *describe* the relationship between temperature and depth.  What might explain the pattern? Hint: use the point geometry
+[Plot](https://r4ds.hadley.nz/data-visualize.html#two-numerical-variables) and *describe* the relationship between temperature and depth.  What might explain the pattern? Hint: use the point geom
 
 ```{r}
 
@@ -55,7 +56,7 @@ Exercise 2 is focused on cleaning up the full dataset.  Initially, you will be u
 
 ## Question 3
 
-We are only interested in the Chla_ugL at the surface of each reservoir. [Filter](https://r4ds.hadley.nz/data-transform.html#filter) the dataset (`df`) to only include measurements less than 1 m deep and [select](https://r4ds.hadley.nz/data-transform.html#sec-select) only the reservoir, site, date, depth, and chlorophyll-a columns
+We are only interested in the `Chla_ugL` at the surface of each reservoir. [Filter](https://r4ds.hadley.nz/data-transform.html#filter) the dataset (`df`) to only include measurements less than 1 m deep and [select](https://r4ds.hadley.nz/data-transform.html#sec-select) only the reservoir, site, date, depth, and chlorophyll-a columns.   Remember the filtering is done on rows and selecting is done on columns.
 
 ## Question 4
 
@@ -105,13 +106,9 @@ How many different reservoirs are in the dataset and what are their names? Hint:
 
 ```
 
-```{r}
-
-```
-
 ## Question 9
 
-Which reservoir has the highest mean surface chlorophyll-a? Hint: use `group_by()` and `summarize()` combination [combination](https://r4ds.hadley.nz/data-transform.html#groups)
+Which reservoir has the highest mean surface chlorophyll-a? Hint: use `group_by()` and `summarize()` [combination](https://r4ds.hadley.nz/data-transform.html#groups)
 
 ```{r}
 
@@ -119,7 +116,7 @@ Which reservoir has the highest mean surface chlorophyll-a? Hint: use `group_by(
 
 ## Question 10
 
-Which reservoir has the highest observed surface temperature?
+Which reservoir has the highest observed surface chlorophyll-a?
 
 ```{r}
 
