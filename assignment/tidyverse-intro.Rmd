@@ -8,6 +8,8 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+This module represent the "Whole Game" for data science in R. In this module you will be importing, tidying, transforming, visualizing, and communicating environmental data.  If you have used Tidyverse previously, then this module is a review.  If you have not used Tidyverse previously then you will use the links to the "R for Data Science" book to learn the skills that you need to complete the module.  
+
 Be sure to load the following packages
 
 ```{r}
