@@ -27,7 +27,20 @@ The Reservoir column is different reservoirs in the Roanoke, VA area that a set 
 Read the data file into R. This file is directly streamed in R memory from a url, rather than downloaded and saved locally.
 
 ```{r}
-df <- read_csv("https://pasta.lternet.edu/package/data/eml/edi/200/12/0a62d1946e8d9a511bc1404e69e59b8c")
+file_name <- "https://pasta.lternet.edu/package/data/eml/edi/200/12/0a62d1946e8d9a511bc1404e69e59b8c"
+df <- read_csv(file_name)
+```
+
+alternatively your can download the file and read it in from your computer.  If you run this code, you should only download it once and then put a comment # in first of the download line so that it does not repeatedly download the code.
+
+```{r eval = FALSE}
+download.file(url = file_name, destfile = "data_raw/assignment2_water_quality_raw.csv", method = "curl")
+```
+
+You will then need to read the file from your local directory. 
+
+```{r eval = FALSE}
+df <- read_csv("data_raw/assignment2_water_quality_raw.csv")
 ```
 
 # Excerise 1
