@@ -192,10 +192,10 @@ Save the plot from Question 14 to a PNG named `question-14.png` in your repo top
 
 ## Question 16
 
-Write the data frame you created for answering Question 14 (not the entire dataset) to your repo top-level directory with the filename of `introduction-cleaned-data.csv`.  Hint use [`write_csv()`](https://r4ds.hadley.nz/data-import.html#sec-writing-to-a-file)
+Write the data frame you created for answering Question 14 (not the entire dataset) to your repo top-level directory with the filename of `question-14-data.csv`.  Hint use [`write_csv()`](https://r4ds.hadley.nz/data-import.html#sec-writing-to-a-file)
 
 ```{r}
 
 ```
 
-Remember to Knit your document as a `github_document` and comment+push your code and knitted document to GitHub.
+Remember to Knit your document as a `github_document` and comment+push your code, knitted document, png (from question 15), and csv (from question 16) files to GitHub.  

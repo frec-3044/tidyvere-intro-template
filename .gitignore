@@ -43,3 +43,5 @@ vignettes/*.pdf
 data_raw
 
 assignment2_water_quality_raw.csv
+
+introduction-cleaned-data.csv
