@@ -2,7 +2,7 @@ This repository is a template for every teams introduction to tidyverse reposito
 
 ## assignment
 
-All work for this assignment is in the `assignment` directory.  Code is contained in the `tidyverse-intro.Rmd` notebook, and final rendered output files (`tidyverse-intro.md` and associated files) are in the `assignment` directory as well. The general rubric you will be graded on is found in the `rubric.md` file. 
+All work for this assignment is in the `assignment` directory.  Code is contained in the `tidyverse-intro.qmd` notebook, and final rendered output files (`tidyverse-intro.html`) are in the `assignment` directory as well. The general rubric you will be graded on is found in the `rubric.md` file. 
 
 ## Special files
 
