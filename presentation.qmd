@@ -1,0 +1,36 @@
+---
+title: "Assignment 2"
+format: 
+  revealjs:
+    embed-resources: true
+editor: visual
+---
+
+## Introduction/Review of Tidyverse
+
+## Reservoirs
+
+```{r}
+#| echo: false
+#| include: false
+#| message: false
+
+library(sf)
+library(leaflet)
+sites <- suppressMessages(sf::st_read("sites.json"))
+```
+
+```{r}
+#| fig.height: 5
+#| fig.width: 10
+#| message: false
+
+leaflet() %>%
+  setView(lat = 37.2, lng = -80.35, zoom= 10) %>%
+  addTiles(group="OSM") %>%
+  addProviderTiles(providers$Esri.WorldImagery, group="Imagery") %>%
+  addProviderTiles(providers$Esri.WorldTopoMap, group="Topo Map") %>%
+  addLayersControl(baseGroups=c('Imagery','OSM', 'Topo Map')) |> 
+  addMarkers(data  = sites, popup=~as.character(site_id), group = ~as.character(Partner), clusterOptions = markerClusterOptions())
+```
+

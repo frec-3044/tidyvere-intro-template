@@ -3,7 +3,7 @@
 
 ## Overview
 
-This module uses a multi-year dataset of water quality variables that have been measured at drinking water reserviors in the Roanoke, VA region.  It focuses on comparing how water temperature and chlorophyll-a, both assoicated with water quality, vary across time and among reservoirs.  The assignment is designed to help you review R tidyverse skills that have been introduced to prior to the course.  It specifically provides links to the relevant sections in the exellent [R for Data Science book (2nd edition)](https://r4ds.hadley.nz) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.  The links allow for self-guided review of the material.
+This module uses a multi-year dataset of water quality variables that have been measured at drinking water reservoirs in the Roanoke, VA region.  It focuses on comparing how water temperature and chlorophyll-a, both associated with water quality, vary across time and among reservoirs.  The assignment is designed to help you review R tidyverse skills that have been introduced to prior to the course.  It specifically provides links to the relevant sections in the excellent [R for Data Science book (2nd edition)](https://r4ds.hadley.nz) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.  The links allow for self-guided review of the material.
 
 - author: Quinn Thomas (@rqthomas)
 - contact: <rqthomas@vt.edu>
@@ -27,7 +27,7 @@ This module uses a multi-year dataset of water quality variables that have been 
 
   - Review coding skills learned in pre-requisite courses by analyzing a real environmental dataset
   - Learn skills in summarizing and wrangling multi-location temporal data
-  - Demonstrate ability to use RStudio, GitHub, and Rmarkdown to demonstrate reproducible output.
+  - Demonstrate ability to use RStudio, GitHub, and Quarto to demonstrate reproducible output.
   - Demonstrate ability to communicate clearly in code, written text, and visual formats.
 
 ## Requirements:
@@ -39,9 +39,9 @@ This module uses a multi-year dataset of water quality variables that have been 
 
 ## Instructions
 
-  - Open the notebook `assignment/tidyverse-intro.Rmd` in RStudio
+  - Open the notebook `assignment/tidyverse-intro.qmd` in RStudio
   - Work through the exercises described in the notebook.
-  - `knit` + commit output files to GitHub
+  - Render + commit output files to GitHub
 
 ## Context
 
@@ -53,5 +53,5 @@ This module has been developed as the second module in a junior-level Environmen
 
 ## Background Reading, Video & Exercises
 
-The background reading is embbed in the assignment Rmarkdown as links to the relevant sections of [R for Data Science book (2nd edition)](https://r4ds.hadley.nz) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.
+The background reading is embedded in the assignment Rmarkdown as links to the relevant sections of [R for Data Science book (2nd edition)](https://r4ds.hadley.nz) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.
 

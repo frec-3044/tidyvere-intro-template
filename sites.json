@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "neon",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "site_id": "Falling Creek Reservoir (FCR) ","Partner": "WVWA", "n": 5 }, "geometry": { "type": "Point", "coordinates": [ -79.837217, 37.303153 ] } },
+{ "type": "Feature", "properties": { "site_id": "Beaverdam Reservoir (BVR)", "Partner": "WVWA","n": 5 }, "geometry": { "type": "Point", "coordinates": [ -79.815936, 37.312909 ] } },
+{ "type": "Feature", "properties": { "site_id": "Carvins Cove Reservoir (CCR)", "Partner": "WVWA","n": 5 }, "geometry": { "type": "Point", "coordinates": [ -79.95821373406172, 37.37046636783749 ] } },
+{ "type": "Feature", "properties": { "site_id": "Spring Hollow Reservoir (SHR)", "Partner": "WVWA","n": 5 }, "geometry": { "type": "Point", "coordinates": [ -80.17364677413832, 37.21853436142768 ] } },
+{ "type": "Feature", "properties": { "site_id": "Gatewood Reservoir", "Partner": "WVWA","n": 5 }, "geometry": { "type": "Point", "coordinates": [ -80.86066641447991, 37.041231348213174 ] } }
+]
+}
