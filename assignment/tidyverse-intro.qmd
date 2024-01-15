@@ -23,7 +23,7 @@ The Reservoir column is different reservoirs in the Roanoke, VA area that a set 
 
 **Warming-up**
 
-Read the data file into R. This file is directly streamed into R memory from a URL, rather than downloaded and saved locally.  Reading from the orginal sources ensures that you are working with latest and unaltered version
+Read the data file into R. This file is directly streamed into R memory from a URL, rather than downloaded and saved locally.  Reading from the original sources ensures that you are working with latest and unaltered version
 
 ```{r}
 file_name <- "https://pasta.lternet.edu/package/data/eml/edi/200/13/27ceda6bc7fdec2e7d79a6e4fe16ffdf"

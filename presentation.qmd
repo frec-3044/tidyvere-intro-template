@@ -36,6 +36,10 @@ How does water quality (temperature and chlorophyll-a) vary across time and amon
 
 ## Data
 
+![Photo credit: Cayelan Carey](img/ctd.png)
+
+## Data
+
 :::: {.columns}
 
 ::: {.column width="22%"}
