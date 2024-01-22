@@ -82,7 +82,7 @@ The assignment is designed to help you review R tidyverse skills that have been 
 
 -   Accept (e.g. fork) assignment
 -   Clone your accepted assignment repo to your computer
--   Work on assignment (many commits)
+-   Work on assignment (many commits expected)
 -   Push assignment to GitHub (many times - this a backup)
 -   Final render of document to HTML
 -   Commit and push HTML to GitHub

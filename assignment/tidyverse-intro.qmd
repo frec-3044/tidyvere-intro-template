@@ -66,10 +66,10 @@ df3 <- df |> filter(Depth_m < 1, Reservoir == "FCR") |> select(Reservoir, Site, 
 
 ## Question 4
 
-The column name `Flag_Chla_ugL` is not is a bit long [Rename](https://r4ds.hadley.nz/data-transform.html#rename) the column to `flag`.  Then `filter` the dataset to only include high quality data (flag is 0) 
+The column name `Flag_Chla_ugL` is a bit long [Rename](https://r4ds.hadley.nz/data-transform.html#rename) the column to `flag`.  Then `filter` the dataset to only include high quality data (flag is 0) 
 
 ```{r}
-df3 <- df3 |> rename(flag = Flag_Chla_ugL) |> filter(flag == 0)
+
 ```
 
 
@@ -190,4 +190,4 @@ Write the data frame you created for answering Question 14 (not the entire datas
 
 ```
 
-Remember to Render your document to an html file and comment+push to GitHub your qmd file, rendered html, png (from question 15), and csv (from question 16). 
+Remember to Render your document to an html file and comment+push to GitHub your qmd file, rendered HTML, png (from question 15), and csv (from question 16).  Upload your rendered HTML to Canvas.
