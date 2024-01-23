@@ -44,6 +44,8 @@ df2 <- df |>
 - Describe the data set that was imported above (`df`) to the best of your ability given the documentation provided: what are the columns and units? Where do the numbers come from? 
 - What value is used for missing values?  What is the interpretation of missing values?
 
+Add answer here
+
 ## Question 2
 
 [Plot](https://r4ds.hadley.nz/data-visualize.html#two-numerical-variables) and *describe* the relationship between temperature and depth.  What might explain the pattern? Hint: use the point geom
@@ -61,7 +63,7 @@ Exercise 2 is focused on cleaning up the full dataset.  Initially, you will be u
 We are only interested in the `Chla_ugL` at the surface of each reservoir. [Filter](https://r4ds.hadley.nz/data-transform.html#filter) the dataset (`df`) to only include measurements less than 1 m deep and [select](https://r4ds.hadley.nz/data-transform.html#sec-select) only the reservoir, site, date, depth, chlorophyll-a, chlorophyll-a flag columns.   Remember the filtering is done on rows and selecting is done on columns.  Assign the new dataframe to `df3`
 
 ```{r}
-df3 <- df |> filter(Depth_m < 1, Reservoir == "FCR") |> select(Reservoir, Site, DateTime, Depth_m, Chla_ugL, Flag_Chla_ugL)
+
 ```
 
 ## Question 4
