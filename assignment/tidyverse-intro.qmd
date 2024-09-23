@@ -6,7 +6,7 @@ format:
     embed-resources: true
 ---
 
-This module represent the "Whole Game" for data science in R. In this module you will be importing, tidying, transforming, visualizing, and communicating environmental data.  If you have used Tidyverse previously, then this module is a review.  If you have not used Tidyverse previously then you will use the links to the "R for Data Science" book to learn the skills that you need to complete the module.  
+This module represents the "Whole Game" for data science in R. In this module, you will be importing, tidying, transforming, visualizing, and communicating environmental data.  If you have used Tidyverse previously, then this module is a review.  If you have not used Tidyverse previously then you will use the links to the "R for Data Science" book to learn the skills that you need to complete the module.  
 
 Be sure to load the following packages
 
@@ -16,17 +16,17 @@ library(tidyverse)
 library(lubridate)
 ```
 
-The Reservoir column is different reservoirs in the Roanoke, VA area that a set of water quality variables have been measured.
+The Reservoir column is different reservoirs in the Roanoke, VA area where a set of water quality variables have been measured.
 
-- Description of data set: <https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=200&revision=13>
-- Data: <https://pasta.lternet.edu/package/data/eml/edi/200/13/27ceda6bc7fdec2e7d79a6e4fe16ffdf>
+- Description of data set: <https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=200&revision=14>
+- Data: <https://pasta.lternet.edu/package/data/eml/edi/200/14/0432a298a90b2b662f26c46071f66b8a>
 
 **Warming-up**
 
-Read the data file into R. This file is directly streamed into R memory from a URL, rather than downloaded and saved locally.  Reading from the original sources ensures that you are working with latest and unaltered version
+Read the data file into R. This file is directly streamed into R memory from a URL, rather than downloaded and saved locally.  Reading from the original sources ensures that you are working with the latest and unaltered version
 
 ```{r}
-file_name <- "https://pasta.lternet.edu/package/data/eml/edi/200/13/27ceda6bc7fdec2e7d79a6e4fe16ffdf"
+file_name <- "https://pasta.lternet.edu/package/data/eml/edi/200/14/0432a298a90b2b662f26c46071f66b8a"
 df <- read_csv(file_name)
 ```
 
@@ -103,7 +103,7 @@ To finalize your cleaned dataset, order the values in the columns by Reservoir (
 
 # Exercise 3
 
-Exercise 3 is focused on high level summary statistics.
+Exercise 3 is focused on high-level summary statistics.
 
 ## Question 8
 
@@ -192,4 +192,4 @@ Write the data frame you created for answering Question 14 (not the entire datas
 
 ```
 
-Remember to Render your document to an html file and comment+push to GitHub your qmd file, rendered HTML, png (from question 15), and csv (from question 16).  Upload your rendered HTML to Canvas.
+Remember to Render your document to an HTML file and comment+push to GitHub your QMD file, rendered HTML, PNG (from question 15), and CSV (from question 16).  Upload your rendered HTML to Canvas.
