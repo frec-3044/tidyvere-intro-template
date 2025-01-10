@@ -3,7 +3,7 @@
 
 ## Overview
 
-This module uses a multi-year dataset of water quality variables that have been measured at drinking water reservoirs in the Roanoke, VA region.  It focuses on comparing how water temperature and chlorophyll-a, both associated with water quality, vary across time and among reservoirs.  The assignment is designed to help you review R tidyverse skills that have been introduced to prior to the course.  It specifically provides links to the relevant sections in the excellent [R for Data Science book (2nd edition)](https://r4ds.hadley.nz) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.  The links allow for self-guided review of the material.
+This module uses a multi-year dataset of water quality variables that have been measured at drinking water reservoirs in the Roanoke, VA, region.  It compares how water temperature and chlorophyll-a, both associated with water quality, vary across time and among reservoirs.  The assignment is designed to help you review R tidyverse skills that were introduced before the course.  It provides explicit links to the relevant sections in the excellent [R for Data Science book (2nd edition)](https://r4ds.hadley.nz) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.  The links allow for a self-guided review of the material.
 
 - author: Quinn Thomas (@rqthomas)
 - contact: <rqthomas@vt.edu>
@@ -15,11 +15,11 @@ This module uses a multi-year dataset of water quality variables that have been 
 
 ## Feedback
 
-- <https://github.com/frec-3044/introduction-template/issues>
+- <https://github.com/frec3044/introduction-template/issues>
 
 ## Questions
 
-- How does water temperature and chlorophyll-a vary across drinking water reservoirs in the Roanoke, VA region?
+- How do water temperature and chlorophyll-a vary across drinking water reservoirs in the Roanoke, VA, region?
 - How do we read and plot this data in a scriptable & reproducible manner?
 - How do we communicate technical analysis in notebook formats that combine code, text, and visuals?
 
@@ -45,7 +45,7 @@ This module uses a multi-year dataset of water quality variables that have been 
 
 ## Context
 
-This module has been developed as the second module in a junior-level Environmental Data Science course at Virginia Tech.  The course is require for majors in the Environmental Data Science degree.  The course has a pre-requisite course that introduces students to tidyverse concepts.  It assumes that students have set of Git and GitHub and understand how to commit and push through Rstudio.
+This module has been developed as the second module in a junior-level Environmental Data Science course at Virginia Tech.  The course is required for majors in the Environmental Data Science degree.  The course has a pre-requisite course that introduces students to tidyverse concepts.  It assumes that students have knowledge of Git and GitHub and understand how to commit and push through Rstudio.
 
 ## Timeframe
 
@@ -53,5 +53,5 @@ This module has been developed as the second module in a junior-level Environmen
 
 ## Background Reading, Video & Exercises
 
-The background reading is embedded in the assignment Rmarkdown as links to the relevant sections of [R for Data Science book (2nd edition)](https://r4ds.hadley.nz) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.
+The background reading is embedded in the assignment quarto document as links to the relevant sections of [R for Data Science book (2nd edition)](https://r4ds.hadley.nz) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund.
 
