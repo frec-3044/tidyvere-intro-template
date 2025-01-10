@@ -6,24 +6,23 @@ format:
     embed-resources: true
 ---
 
-This module represents the "Whole Game" for data science in R. In this module, you will be importing, tidying, transforming, visualizing, and communicating environmental data.  If you have used Tidyverse previously, then this module is a review.  If you have not used Tidyverse previously then you will use the links to the "R for Data Science" book to learn the skills that you need to complete the module.  
+This module represents the "Whole Game" for data science in R. In this module, you will be importing, tidying, transforming, visualizing, and communicating environmental data.  If you have used Tidyverse previously, then this module is a review.  If you have not used Tidyverse previously, then you will use the links to the "R for Data Science" book to learn the skills that you need to complete the module.  
 
-Be sure to load the following packages
+Be sure to load the following packages.
 
 ```{r}
 #| echo: false
 library(tidyverse)
-library(lubridate)
 ```
 
-The Reservoir column is different reservoirs in the Roanoke, VA area where a set of water quality variables have been measured.
+The `Reservoir` column shows different reservoirs in the Roanoke, VA, area where water quality variables were measured.
 
 - Description of data set: <https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=200&revision=14>
 - Data: <https://pasta.lternet.edu/package/data/eml/edi/200/14/0432a298a90b2b662f26c46071f66b8a>
 
 **Warming-up**
 
-Read the data file into R. This file is directly streamed into R memory from a URL, rather than downloaded and saved locally.  Reading from the original sources ensures that you are working with the latest and unaltered version
+Read the data file into R. This file is directly streamed into R memory from a URL rather than downloaded and saved locally.  Reading from the original sources ensures you work with the latest and unaltered version.
 
 ```{r}
 file_name <- "https://pasta.lternet.edu/package/data/eml/edi/200/14/0432a298a90b2b662f26c46071f66b8a"
@@ -32,7 +31,7 @@ df <- read_csv(file_name)
 
 # Excerise 1
 
-The first exercise is focused on data visualization so you will start with a filtered dataset named `df2`.  This subsetted dataset is for a particular location (`Site == 50`) for a particular Reservoir (`Reservoir == "FCR"`).  In this example `df` is modified and assigned to `df2`
+The first exercise is focused on data visualization, so you will start with a filtered dataset named `df2`.  This subsetted dataset is for a particular location (`Site == 50`) for a particular Reservoir (`Reservoir == "FCR"`).  In this example, `df` is modified and assigned to `df2`
 
 ```{r}
 df2 <- df |> 
@@ -41,7 +40,7 @@ df2 <- df |>
 
 ## Question 1:
 
-- Describe the data set that was imported above (`df`) to the best of your ability given the documentation provided: what are the columns and units? Where do the numbers come from? 
+- Describe the data set imported above (`df`) to the best of your ability given the documentation provided: what are the columns and units? Where do the numbers come from? 
 - What value is used for missing values?  What is the interpretation of missing values?
 
 Add answer here
@@ -56,11 +55,11 @@ Add answer here
 
 # Exercise 2
 
-Exercise 2 is focused on cleaning up the full dataset.  Initially, you will be using the full dataset (`df`).  You will be using the `filter`, `select`, `rename`, and `mutate` functions.
+Exercise 2 is focused on cleaning up the full dataset.  Initially, you will use the full dataset (`df`). Then, you will use the `filter`, `select`, `rename`, and `mutate` functions.
 
 ## Question 3
 
-We are only interested in the `Chla_ugL` at the surface of each reservoir. [Filter](https://r4ds.hadley.nz/data-transform.html#filter) the dataset (`df`) to only include measurements less than 1 m deep and [select](https://r4ds.hadley.nz/data-transform.html#sec-select) only the reservoir, site, date, depth, chlorophyll-a, chlorophyll-a flag columns.   Remember the filtering is done on rows and selecting is done on columns.  Assign the new dataframe to `df3`
+We are only interested in the `Chla_ugL` at the surface of each reservoir. [Filter](https://r4ds.hadley.nz/data-transform.html#filter) the dataset (`df`) to only include measurements less than 1 m deep and [select](https://r4ds.hadley.nz/data-transform.html#sec-select) only the reservoir, site, date, depth, chlorophyll-a, chlorophyll-a flag columns.   Remember, the filtering is done on rows, and selecting is done on columns.  Assign the new dataframe to `df3`
 
 ```{r}
 
@@ -68,7 +67,7 @@ We are only interested in the `Chla_ugL` at the surface of each reservoir. [Filt
 
 ## Question 4
 
-The column name `Flag_Chla_ugL` is a bit long [Rename](https://r4ds.hadley.nz/data-transform.html#rename) the column to `flag`.  Then `filter` the dataset to only include high quality data (flag is 0) 
+The column name `Flag_Chla_ugL` is a bit long, so [Rename](https://r4ds.hadley.nz/data-transform.html#rename) the column to `flag`.  Then `filter` the dataset to only include high-quality data (flag is 0) 
 
 ```{r}
 
@@ -94,7 +93,7 @@ In the analysis below, you will need a column that is the month of the measureme
 
 ## Question 7
 
-To finalize your cleaned dataset, order the values in the columns by Reservoir (A-Z).  Hint:  use [`arrange`](https://r4ds.hadley.nz/data-transform.html#arrange)
+To finish up your cleaned dataset, please order the values in the columns by Reservoir (A-Z).  Hint:  use [`arrange`](https://r4ds.hadley.nz/data-transform.html#arrange)
 
 ```{r}
 
@@ -107,7 +106,7 @@ Exercise 3 is focused on high-level summary statistics.
 
 ## Question 8
 
-How many different reservoirs are in the dataset and what are their names? Hint: use the [`distinct`](https://r4ds.hadley.nz/data-transform.html#distinct) function
+How many different reservoirs are in the dataset, and what are their names? Hint: use the [`distinct`](https://r4ds.hadley.nz/data-transform.html#distinct) function
 
 ```{r}
 
@@ -135,7 +134,7 @@ Exercise 4 dives deeper into the data.
 
 ## Question 11
 
-Plot the surface chlorophyll-a concentration for each year (averaged across reservoirs) and describe how surface chlorophyll-a is changing over time.
+Plot the surface chlorophyll-a concentration for each year (averaged across reservoirs) and describe how surface chlorophyll-a changes over time.
 
 ```{r}
 
@@ -159,13 +158,13 @@ Plot the mean surface chlorophyll-a concentration by month for each reservoir an
 
 # Exercise 5
 
-Two of the reservoirs are close in distance to each other (FCR and BVR).  We are interested in how the mean annual surface chlorophyll-a differs between the two and how that difference changes over time. Is the water quality at one reservoir changing more over time than the other? 
+Two of the reservoirs (FCR and BVR) are close to each other.  We are interested in how the mean annual surface chlorophyll-a differs between the two and how that difference changes over time. Is the water quality at one reservoir changing more over time than the other? 
 
 ## Question 14:
 
 Plot the difference in the annual mean chlorophyll-a between `BVR` and `FCR`.  This is the trickiest of the questions because you will need to use [`pivot_wider`](https://r4ds.hadley.nz/data-tidy.html#widening-data) to make a column for `BVR` and `FCR` so that you can subtract one column from the other.
 
-Hints: you will need to use `group_by`, `summarize`, [`pivot_wider`](https://r4ds.hadley.nz/data-tidy.html#widening-data), and `mutate` to get the cleaned dataset from Exercise 3 into a table that can be used generate this plot.
+Hints: You will need to use `group_by`, `summarize`, [`pivot_wider`](https://r4ds.hadley.nz/data-tidy.html#widening-data), and `mutate` to transform the cleaned dataset from Exercise 3 into a table that can be used to generate this plot.
 
 
 ```{r}
@@ -174,7 +173,7 @@ Hints: you will need to use `group_by`, `summarize`, [`pivot_wider`](https://r4d
 
 # Exercise 6
 
-This exercise is focused on exporting the data and a plot 
+This exercise is focused on exporting the data and a plot. 
 
 ## Question 15
 
@@ -186,7 +185,7 @@ Save the plot from Question 14 to a PNG named `question-14.png` in your repo top
 
 ## Question 16
 
-Write the data frame you created for answering Question 14 (not the entire dataset) to your repo top-level directory with the filename of `question-14-data.csv`.  Hint use [`write_csv()`](https://r4ds.hadley.nz/data-import.html#sec-writing-to-a-file)
+Write the data frame you created for answering Question 14 (not the entire dataset) to your repo top-level directory with the filename `question-14-data.csv`.  Hint use [`write_csv()`](https://r4ds.hadley.nz/data-import.html#sec-writing-to-a-file)
 
 ```{r}
 
