@@ -12,7 +12,7 @@ editor: visual
 
 ::: {.column width="70%"}
 - Tidyverse: a collection of open source packages for the R programming language introduced by Hadley Wickham and his team that "share an underlying design philosophy, grammar, and data structures" of tidy data. (Wikipedia)
-- Widely-used approach to data science in R 
+- Widely used approach to data science in R 
 :::
 
 ::: {.column width="30%"}
@@ -26,7 +26,7 @@ editor: visual
 
 ## Resources to learn Tidyverse
 
-- Links embedded in assignment
+- Links embedded in the assignment
 - R for Data Science: https://r4ds.hadley.nz/intro
 - Data Carpentry: https://datacarpentry.org/R-ecology-lesson
 
@@ -43,7 +43,7 @@ How does water quality (temperature and chlorophyll-a) vary across time and amon
 :::: {.columns}
 
 ::: {.column width="22%"}
-CSV data available through the Environmental Data Initiative repository
+CSV data is available through the Environmental Data Initiative repository
 :::
 ::: {.column width="78%"}
 ![](img/edi.png)
@@ -78,12 +78,12 @@ leaflet() %>%
 
 ## Assignment
 
-The assignment is designed to help you review R tidyverse skills that have been introduced to prior to the course.
+The assignment is designed to help you review R tidyverse skills that were introduced before the course.
 
--   Accept (e.g. fork) assignment
+-   Accept (e.g., fork) assignment
 -   Clone your accepted assignment repo to your computer
 -   Work on assignment (many commits expected)
 -   Push assignment to GitHub (many times - this a backup)
--   Final render of document to HTML
+-   Final render of the document to HTML
 -   Commit and push HTML to GitHub
 -   Upload HTML to Canvas
