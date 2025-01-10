@@ -55,7 +55,7 @@ Add answer here
 
 # Exercise 2
 
-Exercise 2 is focused on cleaning up the full dataset.  Initially, you will use the full dataset (`df`). Then, you will use the `filter`, `select`, `rename`, and `mutate` functions.
+Exercise 2 is focused on cleaning up the full dataset.  Initially, you will use the full dataset (`df`), **not** `df2`. Then, you will use the `filter`, `select`, `rename`, and `mutate` functions.
 
 ## Question 3
 
