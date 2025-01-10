@@ -8,17 +8,16 @@ editor: visual
 
 ## Introduction/Review of Tidyverse
 
-:::: {.columns}
-
+::::: columns
 ::: {.column width="70%"}
-- Tidyverse: a collection of open source packages for the R programming language introduced by Hadley Wickham and his team that "share an underlying design philosophy, grammar, and data structures" of tidy data. (Wikipedia)
-- Widely used approach to data science in R 
+-   Tidyverse: a collection of open source packages for the R programming language introduced by Hadley Wickham and his team that "share an underlying design philosophy, grammar, and data structures" of tidy data. (Wikipedia)
+-   Widely used approach to data science in R
 :::
 
 ::: {.column width="30%"}
 ![](img/book-cover.png)
 :::
-::::
+:::::
 
 ## A "Meta-package" of packages
 
@@ -26,9 +25,9 @@ editor: visual
 
 ## Resources to learn Tidyverse
 
-- Links embedded in the assignment
-- R for Data Science: https://r4ds.hadley.nz/intro
-- Data Carpentry: https://datacarpentry.org/R-ecology-lesson
+-   Links embedded in the assignment
+-   R for Data Science: https://r4ds.hadley.nz/intro
+-   Data Carpentry: https://datacarpentry.org/R-ecology-lesson
 
 ## Science Question
 
@@ -40,15 +39,21 @@ How does water quality (temperature and chlorophyll-a) vary across time and amon
 
 ## Data
 
-:::: {.columns}
-
+::::: columns
 ::: {.column width="22%"}
 CSV data is available through the Environmental Data Initiative repository
 :::
+
 ::: {.column width="78%"}
 ![](img/edi.png)
 :::
-::::
+:::::
+
+## Data
+
+The data are from the National Science Foundation funded Virginia Reservoirs Long-Term Research in Environmental Biology site.
+
+![](img/ltreb-site.png)
 
 ## Reservoirs
 
