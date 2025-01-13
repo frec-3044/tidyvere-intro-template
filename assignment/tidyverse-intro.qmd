@@ -191,4 +191,12 @@ Write the data frame you created for answering Question 14 (not the entire datas
 
 ```
 
+# Render and committing
+
 Remember to Render your document to an HTML file and comment+push to GitHub your QMD file, rendered HTML, PNG (from question 15), and CSV (from question 16).  Upload your rendered HTML to Canvas.
+
+# Attribution
+
+Include citation of any AI-generated assistance or discussion with classmates (per policy in syllabus). Proper documentation of AI-generated assistance includes the prompt, the source (e.g., ChatGPT), and the significant parts of the response.  Proper documentation of discussion with classmates include listing their names and the components discussed.  
+
+
