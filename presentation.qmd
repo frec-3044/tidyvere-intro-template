@@ -15,13 +15,14 @@ editor: visual
 :::
 
 ::: {.column width="30%"}
-![](img/book-cover.png)
+![](img/book-cover.png){fig-alt="image R for Data Science book cover"}
+
 :::
 :::::
 
 ## A "Meta-package" of packages
 
-![](img/packages.png)
+![](img/packages.png){fig-alt="collection of tidyverse package hex stickers"}
 
 ## Resources to learn Tidyverse
 
@@ -35,7 +36,7 @@ How does water quality (temperature and chlorophyll-a) vary across time and amon
 
 ## Data
 
-![Photo credit: Cayelan Carey](img/ctd.png)
+![Photo credit: Cayelan Carey](img/ctd.png){fig-alt="CTD sensor for measuring water quality"}
 
 ## Data
 
@@ -45,7 +46,7 @@ CSV data is available through the Environmental Data Initiative repository
 :::
 
 ::: {.column width="78%"}
-![](img/edi.png)
+![](img/edi.png){fig-alt="screenshot of webpage for data respository"}
 :::
 :::::
 
@@ -53,7 +54,7 @@ CSV data is available through the Environmental Data Initiative repository
 
 The data are from the National Science Foundation funded Virginia Reservoirs Long-Term Research in Environmental Biology site.
 
-![](img/ltreb-site.png)
+![](img/ltreb-site.png){fig-alt="screenshot of Virginia Reservoirs Long-Term Research in Environmental Biology website"}
 
 ## Reservoirs
 
@@ -70,6 +71,7 @@ sites <- suppressMessages(sf::st_read("sites.json"))
 ```{r}
 #| fig.height: 5
 #| fig.width: 10
+#| fig-alt: Interactive map of reservoirs used in the module
 #| message: false
 
 leaflet() %>%
